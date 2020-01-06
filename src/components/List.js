@@ -12,7 +12,7 @@ function List(props) {
   const [showLoading, setShowLoading] = useState(true);
 
   const { state: authState } = React.useContext(AuthContext);
-  const apiUrl = "http://dev.api.staller.show/v1/horses";
+  const apiUrl = "https://dev.api.staller.show/v1/horses";
 
   useEffect(() => {
     const fetchData = async () => {
