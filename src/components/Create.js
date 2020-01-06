@@ -8,7 +8,7 @@ function Create(props) {
   const [horses, setHorses] = useState({ id: '', horse_name: '', horse_number: '', age_verified: '' ,dob:'',color:'',ushja_registered:''});
   const [showLoading, setShowLoading] = useState(false);
   const { state: authState } = React.useContext(AuthContext);
-  const apiUrl = "http://dev.api.staller.show/v1/horses" ;
+  const apiUrl = "https://dev.api.staller.show/v1/horses" ;
 
 
   const saveProduct = (e) => {
