@@ -10,7 +10,7 @@ function Show(props) {
   const [data, setData] = useState({});
   const [showLoading, setShowLoading] = useState(true);
   const { state: authState } = React.useContext(AuthContext);
-  const apiUrl = "http://dev.api.staller.show/v1/horses/" + props.match.params.id;
+  const apiUrl = "https://dev.api.staller.show/v1/horses/" + props.match.params.id;
 
   useEffect(() => {
     setShowLoading(false);
