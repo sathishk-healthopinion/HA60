@@ -8,7 +8,7 @@ function Edit(props) {
   const [horses, setHorses] = useState({ id: '', horse_name: '', horse_number: '', age_verified: '' ,dob:'',color:'',ushja_registered:''});
   const [showLoading, setShowLoading] = useState(true);
   const { state: authState } = React.useContext(AuthContext);
-  const apiUrl = "http://dev.api.staller.show/v1/horses/" + props.match.params.id;
+  const apiUrl = "https://dev.api.staller.show/v1/horses/" + props.match.params.id;
 
   useEffect(() => {
     setShowLoading(false);
