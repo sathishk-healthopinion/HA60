@@ -53,7 +53,7 @@ function Login() {
       var pass= hash.toString('hex');
       var val={email:`${json_val.email}`,password:`${pass}`};
         console.log(val);
-        axios.post(`http://dev.api.staller.show/v1/users/login`, val)
+        axios.post(`https://dev.api.staller.show/v1/users/login`, val)
         .then(data => {
           dispatch({
               type: "LOGIN",
